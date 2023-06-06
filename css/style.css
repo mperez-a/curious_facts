@@ -1,13 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Roboto:wght@400;500&display=swap');
 
 :root {
- --header-color: #ff9234;
- --main-background: white;
- --button-color: #35d0ba;
- --border-button: #ff9234;
- --font-family: 'Roboto', Sans-serif;
- --button-text-color: #fefed5;
- --background-text-container: #fefed5;
+    --header-color: #ff9234;
+    --main-background: white;
+    --button-color: #35d0ba;
+    --border-button: #ff9234;
+    --font-family: 'Roboto', sans-serif;
+    --button-text-color: #fefed5;
+    --background-text-container: #fefed5;
+    --text-color: #2e2e2e;
 
 }
 
@@ -28,18 +29,61 @@ header {
     height: 80%;
 }
 
+main {
+    background-color: var(--main-background);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    
+    padding: 0px;
+    margin: 0px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    font-family: var(--font-family);
+    width: 100%;
+    height: 80vh;
+    justify-content: space-evenly;
+}
 
+h1 {
+    color: var(--text-color);
 }
 
 .text-container {
-    width: 70%;
-    height: 70%;
+    width: 80%;
+    height: 50vh;
     border: solid 1px #737373;
     border-radius: 8px;
     background-color:  var(--background-text-container);
+}
+
+.icon-star {
+    position: relative;
+    top: 92%;
+    left: 88%;
+}
+
+.search-btn {
+    width: 80%;
+    height: 55px;
+    border: solid 4px var(--border-button);
+    border-radius: 8px;
+    background-color: var(--button-color);
+    color: var(--button-text-color);
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.list-btn {
+    background-color: transparent;
+    border: none;
+    text-decoration: underline;
+    font-size: 1.125rem;
+    color: var(--text-color);
 }

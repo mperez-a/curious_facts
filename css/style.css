@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&family=Roboto:wght@400;500&display=swap');
+
+:root {
+ --header-color: #ff9234;
+ --main-background: white;
+ --button-color: #35d0ba;
+ --border-button: #ff9234;
+ --font-family: 'Roboto', Sans-serif;
+ --button-text-color: #fefed5;
+ --background-text-container: #fefed5;
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 83px;
+    width: 100%;
+    background-color: var(--header-color);
+}
+.img-logo {
+    height: 80%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+}
+
+.text-container {
+    width: 70%;
+    height: 70%;
+    border: solid 1px #737373;
+    border-radius: 8px;
+    background-color:  var(--background-text-container);
+}

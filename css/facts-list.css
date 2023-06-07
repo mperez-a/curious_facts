@@ -32,6 +32,9 @@
     background-color: var(--background-text-container);
     border: solid 1px #737373;
     border-radius: 8px;
+    overflow: auto;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
 }
 
 .close-btn {

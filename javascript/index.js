@@ -38,7 +38,14 @@ function addFactToList(text) {
 	factsList.appendChild(factItem);
 	factItem.appendChild(removeBtn);
 
-	removeBtn.addEventListener('click' () => removeFactFromList(factItem.innerHTML));
+	removeBtn.addEventListener('click', () => removeFactFromList(factItem));
+}
+
+function removeFactFromList(factItem) {
+	const factsList = document.getElementById("facts-list");
+	const index = Array.from(factsList.children).indexOf(factItem);
+	factList.splice(index, 1);
+	factItem.remove()
 }
 
 searchBtn.addEventListener('click', getFact);

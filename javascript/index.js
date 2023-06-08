@@ -71,3 +71,9 @@ function removeFactFromList(factItem) {
 }
 
 searchBtn.addEventListener('click', getFact);
+
+module.exports = {
+	getFact,
+	addFactToList, 
+	removeFactFromList
+}

@@ -1,14 +1,16 @@
 let factList = [];
 
-const searchBtn = document.getElementById('search-btn');
-
-function getFact() {
+function checkTextAndBtn() {
 	const actualTextContainer = document.querySelector('.random-text');
 	const actualAddBtn = document.querySelector('.add-btn');
 	if (actualTextContainer && actualAddBtn) {
 		actualTextContainer.remove();
 		actualAddBtn.remove();
 	}
+}
+
+function getFact() {
+	checkTextAndBtn();
 
 	const textContainer = document.getElementById('text-container');
 	const factText = document.createElement('p');
@@ -17,8 +19,6 @@ function getFact() {
 	factText.className = 'random-text';
 	addBtn.className = 'add-btn';
 
-	let isFavorited = false;
-
 	fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
 	.then(response => response.json())
 	.then(data => {
@@ -26,18 +26,16 @@ function getFact() {
 		textContainer.appendChild(factText);
 		factText.appendChild(addBtn);
 
-		addBtn.addEventListener('click', () => {
-			if(!isFavorited) {
-				addBtn.src = '../img/icon-star-fill.png';
-				isFavorited = true;
-				addFactToList(data.text);
-			} /*else {
-				addBtn.src = '../img/icon-star.png';
-				isFavorited = false;
-				removeFactFromList(data.text);
-			}*/
-		});
+		addBtn.addEventListener('click', () => fillStarBtn(data.text));
 	});
+}
+
+function fillStarBtn(text) {
+	const addBtn = document.querySelector('.add-btn');
+	if (addBtn) {
+		addBtn.src = '../img/icon-star-fill.png';
+		addFactToList(text);
+	}
 }
 
 function addFactToList(text) {
@@ -55,6 +53,7 @@ function addFactToList(text) {
 		factItem.appendChild(removeBtn);
 
 		removeBtn.addEventListener('click', () => removeFactFromList(factItem));
+		console.log(typeof text);
 	}
 	else {
 		alert('This fact is already in your list!');
@@ -69,8 +68,6 @@ function removeFactFromList(factItem) {
 		factItem.remove()
 	}
 }
-
-searchBtn.addEventListener('click', getFact);
 
 module.exports = {
 	getFact,

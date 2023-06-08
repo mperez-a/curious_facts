@@ -1,12 +1,11 @@
 let factList = [];
 
-function checkTextAndBtn() {
+function deleteCurrentElements() {
 	const actualTextContainer = document.querySelector('p.random-text');
 	if (actualTextContainer) {
 		actualTextContainer.remove();
 	}
 }
-
 
 function showFactData(data) {
 	const textContainer = document.getElementById('text-container');
@@ -23,7 +22,7 @@ function showFactData(data) {
 }
 
 function getFact() {
-	checkTextAndBtn();
+	deleteCurrentElements;
 
 	fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
 		.then(response => response.json())
@@ -65,7 +64,7 @@ function removeFactFromList(factItem) {
 	const index = Array.from(factsList.children).indexOf(factItem);
 	if (index > -1) {
 		factList.splice(index, 1);
-		factItem.remove()
+		factItem.remove();
 	}
 }
 
@@ -73,5 +72,6 @@ module.exports = {
 	getFact,
 	addFactToList, 
 	removeFactFromList,
-	checkTextAndBtn
+	deleteCurrentElements,
+	showFactData
 }

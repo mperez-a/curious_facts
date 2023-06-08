@@ -2,19 +2,29 @@ const {
     getFact, 
     addFactToList,
     removeFactFromList,
-    checkTextAndBtn,
-} = require('../javascript/index.js')
+    deleteCurrentElements,
+    showFactData
+} = require('../javascript/index.js');
 
 describe('function "getFact"', () => {
     it('should be declared', () => {
         expect(typeof getFact).toBe('function');
     });
-
 })
 
 describe('function "addFactToList"', () => {
     it('should be declared', () => {
         expect(typeof addFactToList).toBe('function');
+    });
+    it('should add a fact to the list', () => {
+        document.body.innerHTML =
+            '<ul id="facts-list">' +
+            '  <li class="fact-item" />' +
+            '</ul>';
+
+        addFactToList('text');
+        const factsList = document.getElementById('facts-list');
+        expect(factsList.children.length).toBe(2);
     });
 })
 
@@ -24,19 +34,43 @@ describe('function "removeFactFromList"', () => {
     });
 })
 
-describe('function "checkTextAndBtn"', () => {
+describe('function "deleteCurrentElements"', () => {
     it('should be declared', () => {
-        expect(typeof checkTextAndBtn).toBe('function');
+        expect(typeof deleteCurrentElements).toBe('function');
     });
 
-    it('should be declared', () => {
+    it('should check if the text-container and the random-text exist and remove it', () => {
         document.body.innerHTML =
             '<div id="test-container">' +
             '  <p class="random-text" />'
             '</div>';
 
-        checkTextAndBtn();
+        deleteCurrentElements();
         const testContainer = document.getElementById('test-container');
         expect(testContainer.children.length).toBe(0);
+    });
+})
+
+describe('function "showFactData"', () => {
+    it('should be declared', () => {
+        expect(typeof showFactData).toBe('function');
+    });
+    it('should create a paragraph with a random-text class', () => {
+        document.body.innerHTML =
+            '<div id="text-container">' +
+            '</div>';
+
+        showFactData({text: 'text'});
+        const textContainer = document.getElementById('text-container');
+        expect(textContainer.children[0].className).toBe('random-text');
+    });
+    it('should create an image with an add-btn class', () => {
+        document.body.innerHTML =
+            '<div id="text-container">' +
+            '</div>';
+
+        showFactData({text: 'text'});
+        const textContainer = document.getElementById('text-container');
+        expect(textContainer.children[0].children[0].className).toBe('add-btn');
     });
 })

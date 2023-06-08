@@ -1,33 +1,33 @@
 let factList = [];
 
 function checkTextAndBtn() {
-	const actualTextContainer = document.querySelector('.random-text');
-	const actualAddBtn = document.querySelector('.add-btn');
-	if (actualTextContainer && actualAddBtn) {
+	const actualTextContainer = document.querySelector('p.random-text');
+	if (actualTextContainer) {
 		actualTextContainer.remove();
-		actualAddBtn.remove();
 	}
 }
 
-function getFact() {
-	checkTextAndBtn();
 
+function showFactData(data) {
 	const textContainer = document.getElementById('text-container');
 	const factText = document.createElement('p');
 	const addBtn = document.createElement('img');
 	addBtn.src = '../img/icon-star.png';
 	factText.className = 'random-text';
 	addBtn.className = 'add-btn';
+	factText.textContent = data.text;
+	textContainer.appendChild(factText);
+	factText.appendChild(addBtn);
+
+	addBtn.addEventListener('click', () => fillStarBtn(data.text));
+}
+
+function getFact() {
+	checkTextAndBtn();
 
 	fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
-	.then(response => response.json())
-	.then(data => {
-		factText.textContent = data.text;
-		textContainer.appendChild(factText);
-		factText.appendChild(addBtn);
-
-		addBtn.addEventListener('click', () => fillStarBtn(data.text));
-	});
+		.then(response => response.json())
+		.then(showFactData);
 }
 
 function fillStarBtn(text) {
@@ -72,5 +72,6 @@ function removeFactFromList(factItem) {
 module.exports = {
 	getFact,
 	addFactToList, 
-	removeFactFromList
+	removeFactFromList,
+	checkTextAndBtn
 }

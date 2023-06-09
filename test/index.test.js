@@ -41,13 +41,13 @@ describe('function "deleteCurrentElements"', () => {
 
     it('should check if the text-container and the random-text exist and remove it', () => {
         document.body.innerHTML =
-            '<div id="test-container">' +
-            '  <p class="random-text" />'
+            '<div id="text-container">' +
+            '  <p class="random-text" />' +
             '</div>';
 
         deleteCurrentElements();
-        const testContainer = document.getElementById('test-container');
-        expect(testContainer.children.length).toBe(0);
+        const textContainer = document.getElementById('text-container');
+        expect(textContainer.children.length).toBe(0);
     });
 })
 

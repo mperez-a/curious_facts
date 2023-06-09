@@ -22,7 +22,7 @@ function showFactData(data) {
 }
 
 function getFact() {
-	deleteCurrentElements;
+	deleteCurrentElements();
 
 	fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
 		.then(response => response.json())
@@ -52,7 +52,7 @@ function addFactToList(text) {
 		factItem.appendChild(removeBtn);
 
 		removeBtn.addEventListener('click', () => removeFactFromList(factItem));
-		console.log(typeof text);
+		console.log(factList);
 	}
 	else {
 		alert('This fact is already in your list!');
@@ -65,6 +65,7 @@ function removeFactFromList(factItem) {
 	if (index > -1) {
 		factList.splice(index, 1);
 		factItem.remove();
+		console.log(factList);
 	}
 }
 

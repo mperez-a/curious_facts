@@ -18,8 +18,11 @@ Especific objetives:
 
 ### Mockups
 ##### Mobile version
-![Mobile home1](templates/mobile-version(1).png)
-![Mobile home2](templates/game-page.png)
+![Mobile version1](templates/mobile-version(1).png)
+![Mobile version2](templates/mobile-version(2).png)
+![Mobile version3](templates/mobile-version(3).png)
+![Mobile version4](templates/mobile-version(4).png)
+![Mobile version5](templates/mobile-version(5).png)
 
 ### Technologies
 <div> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>

@@ -12,12 +12,10 @@
 The company Useless Facts wants to develop the front-end part of an application that returns curious data that nobody cares about. The main objective is that on the main page we can see all the curious data returned by the API https://uselessfacts.jsph.pl/ and if we like a curious fact we can save it as a favorite in a list within the page.
 
 Especific objetives:
-
-    - Layout an application 
-    - Level 3: Create
-    - Create a dynamic and adaptable web user interface - Level 3: Create
-    - Manipulate web Events and execute actions in Javascript
-    - Make API call with fetchApi
+   - Layout an application - Level 3: Create
+   - Create a dynamic and adaptable web user interface - Level 3: Create
+   - Manipulate web Events and execute actions in Javascript
+   - Make API call with fetchApi
 
 ## Mockups
 #### Mobile version

@@ -104,3 +104,41 @@ h1 {
     font-size: 1.4rem;
     color: var(--text-color);
 }
+
+.error-message {
+    position: fixed;
+    display: none;
+    z-index: 2;
+    font-family: var(--font-family);
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 70%;
+    height: 30%;
+    background-color: var(--background-color-popup);
+    border-radius: 8px;
+}
+
+.error-button {
+    width: 53px;
+    height: 53px;
+    border-radius: 30px;
+    border: solid 3px #ff9234;
+    background-color: #FEFED5;
+    color: #35D0BA;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

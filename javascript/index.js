@@ -55,7 +55,7 @@ function addFactToList(text) {
 		console.log(factList);
 	}
 	else {
-		alert('This fact is already in your list!');
+		displayErrorMessage();
 	}
 }
 
@@ -67,6 +67,22 @@ function removeFactFromList(factItem) {
 		factItem.remove();
 		console.log(factList);
 	}
+}
+
+function displayErrorMessage() {
+	const errorMessage = document.getElementById('error-message');
+	const errorText = document.getElementById('error-text');
+	const closeBtn = document.getElementById('error-button');
+
+	errorMessage.style.display = 'flex';
+	errorText.innerHTML = 'This fact is already in your list!';
+
+	closeBtn.addEventListener('click', () => hideErrorMessage());
+}
+
+function hideErrorMessage() {
+	const errorMessage = document.getElementById('error-message');
+	errorMessage.style.display = 'none';
 }
 
 module.exports = {

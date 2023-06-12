@@ -1,19 +1,15 @@
-## CONTENTS
-    - [Curious Facts](#description)
-    - [General Info](#general-info)
-    - [Technologies](#technologies)
-    - [Tools](#tools)
-    - [Developers](#developers)
-
-
 # Curious Facts
 
-The company Useless Facts wants to develop the front-end part of an application that returns curious data that nobody cares about.
+## Table of Contents
+1. [General Info](#general-info)
+2. [Technologies](#technologies)
+3. [Installation](#installation)
+4. [Collaboration](#collaboration)
+5. [FAQs](#faqs)
 
 
 ### General Info
-
-The main objective is that on the main page we can see all the curious data returned by the API https://uselessfacts.jsph.pl/ and if we like a curious fact we can save it as a favorite in a list within the page.
+The company Useless Facts wants to develop the front-end part of an application that returns curious data that nobody cares about. The main objective is that on the main page we can see all the curious data returned by the API https://uselessfacts.jsph.pl/ and if we like a curious fact we can save it as a favorite in a list within the page.
 
 Especific objetives:
     - Layout an application - Level 3: Create
@@ -35,6 +31,5 @@ Especific objetives:
 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="github" width="40" heigth="40"/> </div>
 
 ### Developers
-
-        [Manuela Pérez](https://github.com/mperez-a)
-        [Zoraida Moreno](https://github.com/ZoraidaMorenoCadenas)
+[Manuela Pérez](https://github.com/mperez-a)
+[Zoraida Moreno](https://github.com/ZoraidaMorenoCadenas)

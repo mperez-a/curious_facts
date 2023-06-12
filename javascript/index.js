@@ -57,8 +57,6 @@ function addFactToList(text) {
 	if (!factList.includes(text)) {
 		factList.push(text);
 		createListElement(text);
-
-		console.log(factList);
 	}
 	else {
 		displayErrorMessage();
@@ -71,7 +69,6 @@ function removeFactFromList(factItem) {
 	if (index > -1) {
 		factList.splice(index, 1);
 		factItem.remove();
-		console.log(factList);
 	}
 }
 

@@ -77,6 +77,9 @@ h1 {
 .container-search-btn {
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: center;
+
 }
 
 .search-btn {
@@ -91,6 +94,9 @@ h1 {
     margin-bottom: 20px;
 }
 
+.container-list{
+    border-radius: 12px;
+}
 .list-btn {
     background-color: transparent;
     border: none;

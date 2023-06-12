@@ -35,6 +35,14 @@
     overflow: auto;
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
+    padding: 0px 10px 0px 10px;
+}
+
+li {
+    border-bottom: solid 1px grey;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    list-style: none;
 }
 
 .close-btn {

@@ -18,7 +18,7 @@ Especific objetives:
    - Make API call with fetchApi
 
 ## Mockups
-#### Mobile version
+#### Mobile Version
 ![Mobile version1](templates/mobile-version(1).png)
 ![Mobile version2](templates/mobile-version(2).png)
 ![Mobile version3](templates/mobile-version(3).png)
@@ -26,8 +26,12 @@ Especific objetives:
 ![Mobile version5](templates/mobile-version(5).png)
 
 #### Tablet Version
-![Mobile version1](templates/tablet-version(1).png)
-![Mobile version2](templates/tablet-version(2).png)
+![Tablet version1](templates/tablet-version(1).png)
+![Tablet version2](templates/tablet-version(2).png)
+
+#### Desktop Version
+![Desktop version1](templates/desktop-version(1).png)
+![Desktop version2](templates/desktop-version(2).png)
 
 ### Technologies
 <div> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>

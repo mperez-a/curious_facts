@@ -2,10 +2,9 @@
 
 ## Table of Contents
 1. [General Info](#general-info)
-2. [Technologies](#technologies)
-3. [Installation](#installation)
-4. [Collaboration](#collaboration)
-5. [FAQs](#faqs)
+2. [Mockups](#mockups)
+3. [Technologies](#technologies)
+5. [Developers](#Developers)
 
 
 ### General Info
@@ -16,6 +15,11 @@ Especific objetives:
     - Create a dynamic and adaptable web user interface - Level 3: Create
     - Manipulate web Events and execute actions in Javascript
     - Make API call with fetchApi
+
+### Mockups
+##### Mobile version
+![Mobile home1](templates/mobile-version(1).png)
+![Mobile home2](templates/game-page.png)
 
 ### Technologies
 <div> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>

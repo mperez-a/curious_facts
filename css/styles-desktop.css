@@ -17,8 +17,9 @@
         padding-bottom: 40px;
     }
 
-    .close-btn {
-        display: none;
+    .error-container {
+        width: 30%;
+        height: 50%;
     }
 
 }

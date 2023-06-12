@@ -1,0 +1,58 @@
+@media screen and (min-width: 1024px) {
+    header {
+        height: 100px;
+    }
+    
+     .container {
+        height: 110vh;
+        
+    }
+    h1 {
+        font-size: 40px;
+        padding: 30px 0px 30px 0px;
+       
+    }
+    .text-container {
+        padding: 20px 20px 10px 20px;
+        width: 90%;
+        font-size: 1.8rem;
+        border-radius: 12px;
+    }
+
+    .container-search-btn {
+        width: 90%;
+        display: flex;
+        justify-content: flex-start;
+        
+    }
+    
+    .search-btn {
+        margin-top: 30px; 
+        width: 20%;
+        height: 60px;
+
+    }
+   
+    .container-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 90%;
+        max-width: 1000px;
+        height: 80%;
+        max-height: 800px;
+    
+    }
+
+    .list-btn {
+        margin: 20px 0px 40px 0px;
+    
+    }
+    .items-container {
+    padding: 20px;
+    font-size: 1.6rem;
+    border-radius: 12px;
+    
+    }
+}

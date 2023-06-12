@@ -1,0 +1,25 @@
+@media screen and (min-width: 1728px) {
+    h1 {
+        padding: 40px 0px 40px 0px;
+    }
+
+    .container-list {
+        max-width: 2000px  
+    }
+
+    .items-container {
+     
+        border-radius: 15px;
+    }
+    
+    .container-list{
+        border-radius: 15px;
+        padding-bottom: 40px;
+    }
+
+    .error-container {
+        width: 30%;
+        height: 50%;
+    }
+
+}

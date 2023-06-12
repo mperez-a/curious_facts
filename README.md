@@ -25,6 +25,10 @@ Especific objetives:
 ![Mobile version4](templates/mobile-version(4).png)
 ![Mobile version5](templates/mobile-version(5).png)
 
+#### Tablet Version
+![Mobile version1](templates/tablet-version(1).png)
+![Mobile version2](templates/tablet-version(2).png)
+
 ### Technologies
 <div> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/>

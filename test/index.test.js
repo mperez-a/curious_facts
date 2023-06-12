@@ -1,3 +1,5 @@
+const fetchMock = require('jest-fetch-mock');
+
 const {
     getFact, 
     addFactToList,
@@ -9,6 +11,10 @@ const {
 describe('function "getFact"', () => {
     it('should be declared', () => {
         expect(typeof getFact).toBe('function');
+    });
+
+    it('should return a promise', () => {
+        expect(getFact()).toBeInstanceOf(Promise);
     });
 })
 
@@ -31,6 +37,17 @@ describe('function "addFactToList"', () => {
 describe('function "removeFactFromList"', () => {
     it('should be declared', () => {
         expect(typeof removeFactFromList).toBe('function');
+    });
+
+    it('should remove a fact from the list', () => {
+        document.body.innerHTML =
+            '<ul id="facts-list">' +
+            '  <li class="fact-item" />' +
+            '</ul>';
+
+        removeFactFromList(document.querySelector('.fact-item'));
+        const factsList = document.getElementById('facts-list');
+        expect(factsList.children.length).toBe(0);
     });
 })
 

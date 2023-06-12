@@ -24,7 +24,7 @@ function showFactData(data) {
 function getFact() {
 	deleteCurrentElements();
 
-	fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
+	return fetch('https://uselessfacts.jsph.pl/api/v2/facts/random')
 		.then(response => response.json())
 		.then(showFactData);
 }
@@ -37,21 +37,27 @@ function fillStarBtn(text) {
 	}
 }
 
+function createListElement(text) {
+	const factsList = document.getElementById('facts-list');
+	const factItem = document.createElement('li');
+	const removeBtn = document.createElement('img');
+
+	removeBtn.src = '../img/icon-star-fill.png';
+	factItem.className = 'fact-item';
+	removeBtn.className = 'remove-btn';
+
+	factItem.innerHTML = text;
+	factsList.appendChild(factItem);
+	factItem.appendChild(removeBtn);
+
+	removeBtn.addEventListener('click', () => removeFactFromList(factItem));
+}
+
 function addFactToList(text) {
 	if (!factList.includes(text)) {
-		const factsList = document.getElementById('facts-list');
-		const factItem = document.createElement('li');
-		const removeBtn = document.createElement('img');
-	
-		removeBtn.src = '../img/icon-star-fill.png';
-		factItem.className = 'fact-item';
-		removeBtn.className = 'remove-btn';
 		factList.push(text);
-		factItem.innerHTML = text;
-		factsList.appendChild(factItem);
-		factItem.appendChild(removeBtn);
+		createListElement(text);
 
-		removeBtn.addEventListener('click', () => removeFactFromList(factItem));
 		console.log(factList);
 	}
 	else {

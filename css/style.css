@@ -68,10 +68,9 @@ h1 {
     overflow: auto;
 }
 
-.icon-star {
+.add-btn {
+    margin-left: 5px;
     position: relative;
-    top: 92%;
-    left: 88%;
 }
 
 .container-search-btn {
@@ -79,7 +78,6 @@ h1 {
     align-items: center;
     width: 100%;
     justify-content: center;
-
 }
 
 .search-btn {
@@ -97,6 +95,7 @@ h1 {
 .container-list{
     border-radius: 12px;
 }
+
 .list-btn {
     background-color: transparent;
     border: none;

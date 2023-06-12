@@ -74,6 +74,11 @@ h1 {
     left: 88%;
 }
 
+.container-search-btn {
+    display: flex;
+    align-items: center;
+}
+
 .search-btn {
     width: 80%;
     height: 55px;

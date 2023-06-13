@@ -20,6 +20,7 @@ describe('function "addFactToList"', () => {
     it('should be declared', () => {
         expect(typeof addFactToList).toBe('function');
     });
+
     it('should add a fact to the list', () => {
         document.body.innerHTML =
             '<ul id="facts-list">' +
@@ -70,6 +71,7 @@ describe('function "showFactData"', () => {
     it('should be declared', () => {
         expect(typeof showFactData).toBe('function');
     });
+
     it('should create a paragraph with a random-text class', () => {
         document.body.innerHTML =
             '<div id="text-container">' +
@@ -79,6 +81,7 @@ describe('function "showFactData"', () => {
         const textContainer = document.getElementById('text-container');
         expect(textContainer.children[0].className).toBe('random-text');
     });
+    
     it('should create an image with an add-btn class', () => {
         document.body.innerHTML =
             '<div id="text-container">' +

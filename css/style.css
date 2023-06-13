@@ -69,7 +69,13 @@ h1 {
 }
 
 .add-btn {
-    margin-left: 5px;
+    margin-left: 2px;
+    top: 1px;
+    position: relative;
+}
+
+.remove-btn {
+    top: 3px;
     position: relative;
 }
 

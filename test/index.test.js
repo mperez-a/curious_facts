@@ -1,5 +1,3 @@
-const fetchMock = require('jest-fetch-mock');
-
 const {
     getFact, 
     addFactToList,

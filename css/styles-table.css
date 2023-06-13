@@ -1,6 +1,6 @@
 @media screen and (min-width: 1024px) {
     header {
-        height: 100px;
+        height: 80px;
     }
     
     .container {
@@ -30,7 +30,7 @@
     .search-btn {
         margin-top: 30px; 
         width: 20%;
-        height: 60px;
+        height: 50px;
     }
 
     .container-list {
